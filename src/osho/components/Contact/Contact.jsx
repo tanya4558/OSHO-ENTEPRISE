@@ -10,7 +10,7 @@ import {
 import "./Contact.css";
 
 export default function Contact() {
-  const { address } = BUSINESS;
+  const { address, trademark } = BUSINESS;
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
 
   const submit = (e) => {
@@ -124,6 +124,27 @@ export default function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
+        </div>
+      </div>
+
+      <div className="container contact__tm-wrap">
+        <div className="contact__tm">
+          <div className="contact__tm-head">
+            <span className="contact__tm-badge">{trademark.mark}™</span>
+            <div>
+              <h3>Trademark &amp; ownership</h3>
+              <p>Registered under the Trade Marks Act, 1999.</p>
+            </div>
+          </div>
+          <ul>
+            <li><span>Brand</span><strong>{trademark.mark} ({trademark.type})</strong></li>
+            <li><span>Application No.</span><strong>{trademark.applicationNo}</strong></li>
+            <li><span>Class</span><strong>{trademark.class}</strong></li>
+            <li><span>Filed on</span><strong>{trademark.applicationDate}</strong></li>
+            <li><span>Status</span><strong>{trademark.status}</strong></li>
+            <li><span>Proprietor</span><strong>{trademark.proprietor}</strong></li>
+            <li className="contact__tm-goods"><span>Goods</span><strong>{trademark.goods}</strong></li>
+          </ul>
         </div>
       </div>
     </div>

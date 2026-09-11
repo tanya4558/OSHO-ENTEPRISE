@@ -4,7 +4,7 @@ import { BUSINESS, whatsappLink, telLink, mailLink } from "../../data/business.j
 import "./Footer.css";
 
 export default function Footer() {
-  const { address } = BUSINESS;
+  const { address, trademark } = BUSINESS;
   const year = new Date().getFullYear();
 
   return (
@@ -45,7 +45,9 @@ export default function Footer() {
       <div className="footer__bar">
         <div className="container footer__bar-inner">
           <p>© {year} {BUSINESS.name}. All rights reserved.</p>
-          <p>Proprietor: {BUSINESS.proprietor} · 100% Natural Cocopeat</p>
+          <p>
+            {trademark.mark}™ · {trademark.class} · App. No. {trademark.applicationNo} · Proprietor: {trademark.proprietor}
+          </p>
         </div>
       </div>
     </footer>

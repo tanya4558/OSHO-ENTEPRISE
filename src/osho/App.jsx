@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";

@@ -17,6 +17,17 @@ export const BUSINESS = {
     pincode: "395010",
     country: "India",
   },
+  trademark: {
+    mark: "OSHO ENTERPRISE",
+    type: "Word Mark",
+    applicationNo: "7989574",
+    class: "Class 31",
+    applicationDate: "11 September 2026",
+    status: "Ready for Examination",
+    proprietor: "Bhavanaben Sureshbhai Satani",
+    goods:
+      "Raw and unprocessed agricultural, horticultural & forestry products; grains and seeds; fresh fruits, vegetables & herbs; natural plants and flowers; bulbs, seedlings and seeds for planting.",
+  },
 };
 
 export const fullAddress = [
